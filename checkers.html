@@ -42,7 +42,7 @@
             // update canvas with pieces
             game.update();
 
-            canvas.addEventListener('click', function(e) {
+            document.getElementById('canvas').addEventListener('click', function(e) {
                 var position = game.coordsToGrid(e.x, e.y);
                 var piece = game.board.grid[position.x][position.y];
 
