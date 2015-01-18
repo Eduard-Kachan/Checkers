@@ -22,9 +22,6 @@
 
             var i = 0;
 
-            // reused variable to create pieces
-            var piece;
-
             for(i = 11 ;i >= 0; i--){
                 addPiece('white','bottom',game.bottomStartSet[i]);
                 addPiece('black','top',game.topStartSet[i]);
@@ -32,7 +29,7 @@
 
             // function to add the piece
             function addPiece(type,orientation,startSet){
-                piece = new Piece();
+                var piece = new Piece();
                 piece.setType(type)
                         .setOrientation(orientation)
                         .setPosition(startSet);
